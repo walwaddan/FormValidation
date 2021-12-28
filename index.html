@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+
+        *{
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        body{
+            background-color: rgb(230, 255, 255);
+        }
+
+    .personal{
+        display: flex;
+        
+    }
+    .personal>*{
+        flex: auto;
+        background-color: bisque;
+
+    }
+    
+
+    .a >input{
+        display: block;
+        margin-left: auto;
+            
+    }
+    .a >label{
+        float: left;
+    }
+
+    .b >input,div{
+        display: block;
+        margin-left: auto;
+        
+        
+    }
+    
+    .b >label{
+        float: left;
+    }
+
+    .additional{
+        display: flex;
+        flex-wrap:wrap;
+        background-color: bisque;
+    }
+    .additional>*{
+        flex: auto;
+    }
+
+   .mcqs{
+       display: flex;
+       flex-wrap: wrap;
+       background-color: bisque;
+       
+   }
+   .mcqs>*{
+       flex:300px;
+       border: 3px solid rgb(255, 208, 151);
+   }
+   .small{
+       display:flex ;
+       justify-content: space-between;
+   }
+
+   .table{
+background-color: yellowgreen;
+
+   }
+
+   .table>th,td{
+       border: 1px solid red;
+   }
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+    <body>
+        <h1>Form Validation</h1>
+        <form action="" oninput="ageout.value=age.value">
+        <fieldset>
+            <legend>Personal Detail</legend>
+            <div class="personal">
+                    <div class="a">
+                    
+                        <label for="">Name :</label>
+                        <input type="text" placeholder="Badar">
+                        <br>
+                        
+                        
+                        <label>Country :</label>
+                        <input type="text" placeholder="Pakistan">
+                        <br>
+
+                        
+                        <label for="">Date of Birth:</label>
+                        <input type="date" min="01/01/1947" max="01/01/2020" value="01/01/2000">
+                        
+                    
+                    </div>
+
+                    <div class="b">
+                        
+
+                        <label for="">Contact Number :</label>
+                        <input type="text" placeholder="00-000-0000000" pattern="[0-9]{2}-[0-9]{3}-[0-9]{7}" maxlength="14" required>
+                        <br>
+                        <label for="">Email :</label>
+                        <input type="text" placeholder="someone@mail.com"   required>
+
+                        <br>
+                        <div class="small">
+                        <label for="">Slide to select age</label>
+                        <output name="ageout" for="age" >20</output>
+                        <input type="range" id="age" name="age" min="18" max="100" value="28" required>
+                        
+                        </div>
+                    
+                    </div>
+             </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+          <div class="additional">
+
+            <div>
+                <label for="">Q-1 : Which vehicles do you have?</label>  <br>
+                <input type="checkbox"><label for="">Car</label> <br>
+                <input type="checkbox"><label for="">Bike</label> <br>
+                <input type="checkbox"><label for="">Cycle</label> <br>
+                <input type="checkbox"><label for="">other</label> <input type="text"> 
+            </div>
+            <div>
+                <label for="">Q-2 : Which vehicles do you have?</label>  <br>
+                <input type="checkbox"><label for="">Car</label> <br>
+                <input type="checkbox"><label for="">Bike</label> <br>
+                <input type="checkbox"><label for="">Cycle</label> <br>
+                <input type="checkbox"><label for="">other</label> <input type="text"> 
+            </div>
+
+            <div>
+                <label for="">Q-3 : Which vehicles do you have?</label>  <br>
+                <input type="checkbox"><label for="">Car</label> <br>
+                <input type="checkbox"><label for="">Bike</label> <br>
+                <input type="checkbox"><label for="">Cycle</label> <br>
+                <input type="checkbox"><label for="">other</label> <input type="text"> 
+            </div>
+
+            <div>
+                <label for="">Q-4 : Which vehicles do you have?</label>  <br>
+                <input type="checkbox"><label for="">Car</label> <br>
+                <input type="checkbox"><label for="">Bike</label> <br>
+                <input type="checkbox"><label for="">Cycle</label> <br>
+                <input type="checkbox"><label for="">other</label> <input type="text"> 
+            </div>
+
+
+          </div>
+
+
+           
+        </fieldset>
+        <fieldset>
+            <legend>
+                MCQs :
+            </legend>
+            <div class="mcqs">
+                <div>
+                <label for="">Do you Smoke?</label> <br>
+                <input type="radio" name="q1"><label for="">yes</label>  
+                <input type="radio" name="q1"><label for="">yes</label>  
+                <input type="radio" name="q1"><label for="">yes</label>  
+                <input type="radio" name="q1"><label for="">no</label>
+                </div>
+
+                <div>
+                    <label for="">Do you Smoke?</label> <br>
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">no</label>
+                    </div>
+                 <div>
+                        <label for="">Do you Smoke?</label> <br>
+                        <input type="radio" name="q1"><label for="">yes</label>  
+                        <input type="radio" name="q1"><label for="">yes</label>  
+                        <input type="radio" name="q1"><label for="">yes</label>  
+                        <input type="radio" name="q1"><label for="">no</label>
+                </div>
+                <div>
+                    <label for="">Do you Smoke?</label> <br>
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">yes</label>  
+                    <input type="radio" name="q1"><label for="">no</label>
+                    </div>
+
+
+            </div>
+        </fieldset>
+     
+        <select name="" id="">
+            <optgroup label="first Group">
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+            </optgroup>
+
+            <optgroup label="Second Group">
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+            </optgroup>
+
+            <optgroup label="Third Group">
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+                <option value="">option 1</option>
+            </optgroup>
+            
+        </select>
+
+        <table class="table">
+           <th>
+            <td>first</td>
+            <td>second</td>
+            <td>third</td>
+           </th>
+            <tr>
+                <td>first</td>
+                <td>second</td>
+                <td>third</td>
+                <td>third</td>
+            </tr>
+            <tr>
+                <td>first</td>
+                <td>second</td>
+                <td>third</td>
+                <td>third</td>
+            </tr>
+            <tr>
+                <td>first</td>
+                <td>second</td>
+                <td>third</td>
+                <td>third</td>
+            </tr>
+
+
+
+        </table>
+
+
+
+
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>name</th>
+                <th>phone</th>
+                <th>location</th>
+            </tr>
+           
+             <tr>
+                 <td>first</td>
+                 <td>second</td>
+                 <td>third</td>
+                 <td>third</td>
+             </tr>
+             <tr>
+                 <td>first</td>
+                 <td>second</td>
+                 <td>third</td>
+                 <td>third</td>
+             </tr>
+             <tr>
+                 <td>first</td>
+                 <td>second</td>
+                 <td>third</td>
+                 <td>third</td>
+             </tr>
+ 
+ 
+ 
+         </table>
+        <!-- <tr>
+            <th>name</th>
+            <th>phone</th>
+            <th>location</th>
+        </tr> -->
+
+      <input type="submit">
+            
+        
+
+
+        
+
+
+    </form>
+    </body>
+
+</html>
